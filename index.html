@@ -34,7 +34,8 @@
     h1,
     h2,
     p,
-    ul {
+    ul,
+    li {
       margin: 0;
       padding: 0;
     }
@@ -85,6 +86,7 @@
       box-shadow: inset 0 -0.5em 0 #9FCCD8;
     }
 
+
     blockquote {
       font-size: 1.5em;
       quotes: "\201C""\201D""\2018""\2019";
@@ -120,8 +122,29 @@
       justify-self: end;
     }
 
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
     article {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media screen and (min-width: 900px) {
+      main {
+        justify-content: space-around;
+      }
+
+      article {
+        max-width: 450px;
+      }
+
+      article:nth-of-type(even)>img {
+        grid-column: 1 / span 2;
+        justify-self: start;
+      }
     }
 
     footer {
@@ -151,7 +174,7 @@
     <article>
       <img src="images/qltppl.png">
       <h2>Quality People Dashboard</h2>
-      <ul class="work-tags">
+      <ul>
         <li>Process modelling</li>
         <li>Mockups</li>
         <li>Functional specs</li>
@@ -163,7 +186,7 @@
     <article>
       <img src="images/viz.gif">
       <h2>Visualizing research impact over time</h2>
-      <ul class="work-tags">
+      <ul>
         <li>Visualization</li>
         <li>d3.js</li>
       </ul>
@@ -174,7 +197,7 @@
     <article>
       <img src="images/scaling-science.png">
       <h2>Scaling Science Platform</h2>
-      <ul class="work-tags">
+      <ul>
         <li>Interaction design</li>
         <li>Mockups</li>
         <li>Adobe XD</li>
@@ -185,7 +208,7 @@
     <article>
       <img src="https://picsum.photos/id/1/500/300">
       <h2>jjlumagbas.com</h2>
-      <ul class="work-tags">
+      <ul>
         <li>Web design</li>
       </ul>
       <p>Attempt to let some personality through while showcasing recent projects <a href="#">Case study &rarr;</a></p>
@@ -194,7 +217,7 @@
     <article>
       <img src="images/lets-cook.png">
       <h2>Let's Cook!</h2>
-      <ul class="work-tags">
+      <ul>
         <li>User research</li>
         <li>Prototypes</li>
         <li>Usability testing</li>

@@ -7,6 +7,7 @@
   <title>JJ Lumagbas | Front-end web devt + Interaction design</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700|Source+Serif+Pro&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,600,700&display=swap" rel="stylesheet">
   <style>
     html {
       box-sizing: border-box;
@@ -43,22 +44,23 @@
     h1,
     h2,
     address {
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Space Mono', monospace;
       font-style: normal;
     }
 
     h1 {
       font-size: 3em;
-      font-weight: 100;
       line-height: 1.1em;
     }
 
     h2 {
-      font-size: 1.5em;
-      font-weight: 400;
-      letter-spacing: .02em;
       margin-bottom: .5em;
+
+      font-size: 1.5em;
+      letter-spacing: .01em;
+      line-height: 1em;
     }
+
 
     ul {
       display: flex;
@@ -86,14 +88,13 @@
       box-shadow: inset 0 -0.5em 0 #9FCCD8;
     }
 
-
-    blockquote {
-      font-size: 1.5em;
-      quotes: "\201C""\201D""\2018""\2019";
+    .logo {
+      letter-spacing: .07em;
     }
 
-    em {
+    footer em {
       font-size: .6em;
+      font-weight: 400;
     }
 
     header {
@@ -129,6 +130,7 @@
     }
 
     article {
+      width: 100%;
       margin-bottom: 3rem;
     }
 
@@ -166,7 +168,7 @@
 <body>
 
   <header>
-    <h2>JJ Lumagbas</h2>
+    <h2><a class="logo" href="/">JJ Lumagbas</a></h2>
     <h1>Front-end web devt +<br />Interaction design</h1>
   </header>
 

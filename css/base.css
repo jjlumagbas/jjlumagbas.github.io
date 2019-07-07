@@ -83,6 +83,10 @@ a {
   box-shadow: inset 0 -0.5em 0 #9FCCD8;
 }
 
+p {
+  font-size: 1.2em;
+}
+
 .logo {
   letter-spacing: .06em;
 }

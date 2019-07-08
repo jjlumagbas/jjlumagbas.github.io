@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../css/base.css" rel="stylesheet" type="text/css">
+  <title>JJ Lumagbas | Front-end web devt + Interaction design</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Source+Serif+Pro|Space+Mono:400,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h2><a class="logo" href="/">JJ Lumagbas</a>Front-end web devt + Interaction design</h2>
+    <h1>jjlumagbas.com</h1>
+    <ul>
+      <li>Case study</li>
+      <li>Web design</li>
+    </ul>
+  </header>
+
+  <article>
+    <figure><img src="https://picsum.photos/id/1/500/300"></figure>
+    <p class="leading">My goal was to put up a portfolio site as quickly and simply as possible. I decided to take the
+      same route as <a href="https://css-irl.info/building-a-dependency-free-site/">Michelle
+        Barker</a>: no build tools, no pre-processors, just static hand-coded HTML+CSS. It was an opportunity for me to,
+      erm, Flex my modern CSS layout skills, so I was eager to get on it.</p>
+
+    <h2 id="toc_0">Content</h2>
+
+    <p>First I listed out what I actually wanted on there, and then I banged out initial copy for the home page and
+      collected some images. I held back from making the copy (or images) perfect, just so I could get started laying it
+      out (i.e the fun part). I would revisit the copy multiple times throughout the process, tweaking
+      as I went. </p>
+
+    <h2 id="toc_1">Typography</h2>
+
+    <p>For my resumé, I&#8217;d already adopted the awesome Source Sans/Serif Pro family from Adobe, so I stuck with
+      that, only adding in Space Mono later on, which I love since it's edgy but in a way that's somewhat relevant.</p>
+
+    <p>To minimize markup, I wanted to reuse styles as much as possible, so I narrowed it down to these:</p>
+
+    <h1 id="toc_2">Big headings</h1>
+
+    <h2 id="toc_3">Subheadings</h2>
+
+    <ul>
+      <li>Tag-like text (captions share the same style)</li>
+    </ul>
+
+    <p><a href="">Links</a></p>
+
+    <p>And of course paragraph text.</p>
+
+    <p>Apply styles, preview in browser, tweak sizes, line-heights, character spacing. Rinse. Repeat.</p>
+
+    <h2 id="toc_4">Layout</h2>
+
+    <p>I started with semantic markup and then checked to see how it looked on the browser before any CSS. I then worked
+      my way through a mobile layout, then a layout for larger screens.</p>
+
+    <p>My overall vision for the layout was for it to have an organic feel, with alignment variations on the cards,
+      versus having everything line up on a strict grid. Online portfolios of <a
+        href="https://www.firstborn.com/">Firstborn</a> and <a href="https://today.design/">Today</a> served as
+      inspiration. </p>
+
+    <p>For the images, I found a fun treatment in some parenting magazine at the library. I like how it serves as a
+      visual bridge between images and headings or captions underneath it.</p>
+    <figure>
+      <img src="../../images/image-treatment.jpg">
+      <figcaption>Image treatment from a parenting magazine</figcaption>
+    </figure>
+    <h2 id="toc_5">Deploy</h2>
+
+    <p>Hosting the site on Github Pages was the most obvious choice and most testing was done here, but Netlify really
+      has it beat in terms of site-load speed. And the setup was dead-easy.</p>
+
+    <p>All throughout, I resisted the urge to get fancy, keeping <a
+        href="https://frankchimero.com/writing/everything-easy-is-hard-again/">Frank Chimero&#39;s words</a> in mind:
+    </p>
+
+    <blockquote>
+      <p>Directness is best in my experience, so a great photo, memorable illustration, or pitch-perfect sentence does
+        most of the work. Beyond that, fancy implementation has never moved the needle much for my clients.</p>
+    </blockquote>
+
+    <p>Did I succeed? Let me know!</p>
+
+  </article>
+
+  <footer>
+    <nav>
+      <h2>JJ Lumagbas<br /><em>/lew-MUG-bus/</em></h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="mailto:jjlumagbas@gmail.com">jjlumagbas@gmail.com</a></li>
+        <li><a href="/jjlumagbas-resume-frontend.pdf">Resumé</a></li>
+        <li><a href="https://github.com/jjlumagbas/">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jjlumagbas/">LinkedIn</a></li>
+        <li><a href="https://instagram.com/jjlumagbas/">Instagram</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>

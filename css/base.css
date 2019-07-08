@@ -134,6 +134,10 @@ footer {
   min-height: 100vh;
 }
 
+footer h2 {
+  white-space: nowrap;
+}
+
 footer>* {
   background-color: white;
   grid-column: 2 / span 2;

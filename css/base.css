@@ -97,6 +97,13 @@ p.leading {
   max-width: 60ch;
 }
 
+blockquote {
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: .5em;
+}
+
 figure {
   margin-bottom: 1rem;
 }

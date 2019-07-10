@@ -1,136 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JJ Lumagbas | Front-end web devt + Interaction design</title>
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600|Source+Serif+Pro:400,700|Space+Mono:400italic,700&display=swap"
-    rel="stylesheet">
-  <style>
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-    }
-
-    @media screen and (min-width: 900px) {
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JJ Lumagbas | Front-end web devt + Interaction design</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600|Source+Serif+Pro:400,700|Space+Mono:400italic,700&display=swap"
+      rel="stylesheet">
+    <style>
       main {
-        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
       }
 
-      article {
-        max-width: 450px;
+      @media screen and (min-width: 900px) {
+        main {
+          justify-content: space-around;
+        }
+
+        article {
+          max-width: 450px;
+        }
+
+        article:nth-of-type(even)>img {
+          grid-column: 1 / span 2;
+          justify-self: start;
+        }
+
+        .push-down {
+          position: relative;
+          top: 2rem;
+        }
+
+        .pull-up {
+          position: relative;
+          top: -5rem;
+        }
+
+        .pull-up-s {
+          position: relative;
+          top: -2rem;
+        }
       }
+    </style>
+  </head>
 
-      article:nth-of-type(even)>img {
-        grid-column: 1 / span 2;
-        justify-self: start;
-      }
+  <body>
 
-      .push-down {
-        position: relative;
-        top: 2rem;
-      }
+    <header>
+      <h2><a class="logo" href="/">JJ Lumagbas</a></h2>
+      <h1>Front-end web devt +<br />Interaction design</h1>
+    </header>
 
-      .pull-up {
-        position: relative;
-        top: -5rem;
-      }
+    <main>
+      <article>
+        <img src="images/qltppl.jpg" alt="Section of Quality People's dashboard interface">
+        <h2>Quality People Dashboard</h2>
+        <ul>
+          <li>Process modelling</li>
+          <li>Mockups</li>
+          <li>Functional specs</li>
+          <li>Adobe XD</li>
+          <li>Remote</li>
+        </ul>
+        <p><a href="case-study/quality/">Case study &rarr;</a></p>
+      </article>
 
-      .pull-up-s {
-        position: relative;
-        top: -2rem;
-      }
-    }
-  </style>
-</head>
+      <article class="push-down">
+        <img src="images/viz.jpg" alt="Bubble chart with green and blue bubbles representing research papers">
+        <h2>Visualizing research impact over time</h2>
+        <ul>
+          <li>Visualization</li>
+          <li>d3.js</li>
+          <li>Remote</li>
+        </ul>
+        <p>Internal tool enabled MIT Media Lab researchers to interactively explore trends over a 70-year period for
+          a 100+ item data set <a href="https://viz-gnosfwkwfc.now.sh/">Demo (Desktop) &rarr;</a></p>
+      </article>
 
-<body>
+      <article class="pull-up">
+        <img src="images/scaling-science.jpg" alt="Web interface for Scaling Science">
+        <h2>Scaling Science Platform</h2>
+        <ul>
+          <li>Interaction design</li>
+          <li>Mockups</li>
+          <li>Adobe XD</li>
+          <li>Remote</li>
+        </ul>
+        <p>Concept for a platform that surfaces potential collaborators for research projects</p>
+      </article>
 
-  <header>
-    <h2><a class="logo" href="/">JJ Lumagbas</a></h2>
-    <h1>Front-end web devt +<br />Interaction design</h1>
-  </header>
+      <article>
+        <img src="images/mockup.jpg" alt="Mobile, tablet, and desktop views of jjlumagbas.com">
+        <h2>jjlumagbas.com</h2>
+        <ul>
+          <li>Web design</li>
+        </ul>
+        <p>Attempt to let some personality through while showcasing recent projects <a
+            href="/case-study/portfolio/">Case
+            study &rarr;</a></p>
+      </article>
 
-  <main>
-    <article>
-      <img src="images/qltppl.jpg">
-      <h2>Quality People Dashboard</h2>
-      <ul>
-        <li>Process modelling</li>
-        <li>Mockups</li>
-        <li>Functional specs</li>
-        <li>Adobe XD</li>
-        <li>Remote</li>
-      </ul>
-      <p><a href="case-study/quality/">Case study &rarr;</a></p>
-    </article>
+      <article class="pull-up-s">
+        <img src="images/lets-cook.jpg" alt="Paper sketch of screens for the Let's Cook mobile app">
+        <h2>Let's Cook!</h2>
+        <ul>
+          <li>User research</li>
+          <li>Prototypes</li>
+          <li>Usability testing</li>
+        </ul>
+        <p>Interactive prototypes and usability testing for a cooking-focused social app <a
+            href="https://www.youtube.com/watch?v=WBY6jFQhEFo">Video: usability test &rarr;</a></p>
+      </article>
 
-    <article class="push-down">
-      <img src="images/viz.jpg">
-      <h2>Visualizing research impact over time</h2>
-      <ul>
-        <li>Visualization</li>
-        <li>d3.js</li>
-        <li>Remote</li>
-      </ul>
-      <p>Internal tool enabled MIT Media Lab researchers to interactively explore trends over a 70-year period for
-        a 100+ item data set <a href="https://viz-gnosfwkwfc.now.sh/">Demo (Desktop) &rarr;</a></p>
-    </article>
+    </main>
 
-    <article class="pull-up">
-      <img src="images/scaling-science.jpg">
-      <h2>Scaling Science Platform</h2>
-      <ul>
-        <li>Interaction design</li>
-        <li>Mockups</li>
-        <li>Adobe XD</li>
-        <li>Remote</li>
-      </ul>
-      <p>Concept for a platform that surfaces potential collaborators for research projects</p>
-    </article>
-
-    <article>
-      <img src="images/mockup.jpg">
-      <h2>jjlumagbas.com</h2>
-      <ul>
-        <li>Web design</li>
-      </ul>
-      <p>Attempt to let some personality through while showcasing recent projects <a href="/case-study/portfolio/">Case
-          study &rarr;</a></p>
-    </article>
-
-    <article class="pull-up-s">
-      <img src="images/lets-cook.jpg">
-      <h2>Let's Cook!</h2>
-      <ul>
-        <li>User research</li>
-        <li>Prototypes</li>
-        <li>Usability testing</li>
-      </ul>
-      <p>Interactive prototypes and usability testing for a cooking-focused social app <a
-          href="https://www.youtube.com/watch?v=WBY6jFQhEFo">Video: usability test &rarr;</a></p>
-    </article>
-
-  </main>
-
-  <footer>
-    <nav>
-      <h2>JJ Lumagbas<br /><em>/lew-MUG-bus/</em></h2>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="mailto:jjlumagbas@gmail.com">jjlumagbas@gmail.com</a></li>
-        <li><a href="/jjlumagbas-resume-frontend.pdf">Resumé</a></li>
-        <li><a href="https://github.com/jjlumagbas/">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/jjlumagbas/">LinkedIn</a></li>
-        <li><a href="https://twitter.com/jjlumagbas">Twitter</a></li>
-        <li><a href="https://instagram.com/jjlumagbas/">Instagram</a></li>
-      </ul>
-    </nav>
-  </footer>
-</body>
+    <footer>
+      <nav>
+        <h2>JJ Lumagbas<br /><em>/lew-MUG-bus/</em></h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="mailto:jjlumagbas@gmail.com">jjlumagbas@gmail.com</a></li>
+          <li><a href="/jjlumagbas-resume-frontend.pdf">Resumé</a></li>
+          <li><a href="https://github.com/jjlumagbas/">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jjlumagbas/">LinkedIn</a></li>
+          <li><a href="https://twitter.com/jjlumagbas">Twitter</a></li>
+          <li><a href="https://instagram.com/jjlumagbas/">Instagram</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 
 </html>

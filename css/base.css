@@ -167,9 +167,3 @@ footer>* {
   padding-left: 5vw;
 }
 
-
-@media screen and (min-width: 900px) {
-  html {
-    font-size: 20px;
-  } 
-}

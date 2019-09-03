@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 18px;
+  background: #FDFDFF;
 }
 
 *,
@@ -165,7 +166,7 @@ footer p {
 }
 
 footer>* {
-  background-color: white;
+  background-color: #FDFDFF;
   grid-column: 2 / span 2;
   padding-top: 3vw;
   padding-left: 5vw;

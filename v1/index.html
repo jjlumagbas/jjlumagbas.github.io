@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description"
+      content="Hi, I'm JJ. I care about building wesites that make people happy by looking good and working well.">
+    <title>JJ Lumagbas | Front-end web devt + Interaction design</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600|Source+Serif+Pro:400,700|Space+Mono:400italic,700&display=swap"
+      rel="stylesheet">
+    <style>
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1440px;
+      }
+
+      @media screen and (min-width: 1000px) {
+        main {
+          justify-content: space-around;
+        }
+
+        article {
+          max-width: 500px;
+        }
+
+        article:nth-of-type(even)>img {
+          grid-column: 1 / span 2;
+          justify-self: start;
+        }
+
+        .push-down {
+          position: relative;
+          top: 2rem;
+        }
+
+        .pull-up {
+          position: relative;
+          top: -5rem;
+        }
+
+        .pull-up-s {
+          position: relative;
+          top: -2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h2><a class="logo" href="/">JJ Lumagbas</a></h2>
+      <h1>Front-end web devt +<br />Interaction design</h1>
+    </header>
+
+    <main>
+      <article>
+        <img src="images/qltppl.jpg" alt="Section of Quality People's dashboard interface">
+        <h2>Quality People Dashboard</h2>
+        <ul>
+          <li>Process modelling</li>
+          <li>Mockups</li>
+          <li>Functional specs</li>
+          <li>Adobe XD</li>
+          <li>Remote</li>
+        </ul>
+        <p>Product management for a major feature update <a href="case-study/quality/">Case study
+            &rarr;</a></p>
+      </article>
+
+      <article class="pull-up">
+        <img src="images/viz.jpg" alt="Bubble chart with green and blue bubbles representing research papers">
+        <h2>Visualizing multi-year trends in research data</h2>
+        <ul>
+          <li>Visualization</li>
+          <li>d3.js</li>
+          <li>Remote</li>
+        </ul>
+        <p>Helped develop an internal tool that enabled MIT Media Lab researchers to interactively explore trends over a
+          70-year period for a 100+ item data set <a href="https://viz-gnosfwkwfc.now.sh/">Demo (Desktop) &rarr;</a></p>
+      </article>
+
+      <article class="pull-up-s">
+        <img src="images/scaling-science.jpg" alt="Web interface for collaboration platform for researchers">
+        <h2>Research Collaboration Platform</h2>
+        <ul>
+          <li>Interaction design</li>
+          <li>Mockups</li>
+          <li>Adobe XD</li>
+          <li>Remote</li>
+        </ul>
+        <p>Front-end design for a platform to facilitate collaboration among researchers</p>
+      </article>
+
+      <article class="pull-up">
+        <img src="images/2d-rangeslider.jpg" alt="Network graph with a draggable center node">
+        <h2>2D Range Slider</h2>
+        <ul>
+          <li>Interaction design</li>
+          <li>d3.js</li>
+          <li>Remote</li>
+        </ul>
+        <p>For a recent project, I built an interactive input control that sets weights for multiple variables by
+          dragging a node <a href="https://2d-rangeslider-qyuheaispc.now.sh">Demo &rarr;</a></p>
+      </article>
+
+      <article>
+        <img src="images/mockup.jpg" alt="Mobile, tablet, and desktop views of jjlumagbas.com">
+        <h2>jjlumagbas.com</h2>
+        <ul>
+          <li>Web design</li>
+        </ul>
+        <p>Attempt to let some personality through while showcasing recent projects <a
+            href="/case-study/portfolio/">Case
+            study &rarr;</a></p>
+      </article>
+
+      <article class="pull-up-s">
+        <img src="images/lets-cook.jpg" alt="Paper sketch of screens for the Let's Cook mobile app">
+        <h2>Let's Cook!</h2>
+        <ul>
+          <li>User research</li>
+          <li>Prototypes</li>
+          <li>Usability testing</li>
+        </ul>
+        <p>Interactive prototypes and usability testing for a cooking-focused social app <a
+            href="https://www.youtube.com/watch?v=WBY6jFQhEFo">Video: usability test &rarr;</a></p>
+      </article>
+
+    </main>
+
+    <footer>
+      <nav>
+        <h2>JJ Lumagbas<br /><em>/lew-MUG-bus/</em></h2>
+        <p>Hi! I'm JJ. I care about building wesites that make people happy by looking good and working well.</p>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="mailto:jjlumagbas@gmail.com">jjlumagbas@gmail.com</a></li>
+          <li><a href="/jjlumagbas-resume-frontend.pdf">Resumé</a></li>
+          <li><a href="https://github.com/jjlumagbas/">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jjlumagbas/">LinkedIn</a></li>
+          <li><a href="https://twitter.com/jjlumagbas">Twitter</a></li>
+          <li><a href="https://instagram.com/jjlumagbas/">Instagram</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+
+</html>

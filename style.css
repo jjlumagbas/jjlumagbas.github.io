@@ -6,4 +6,108 @@
 
 body {
   font-family: 'Proza Libre', sans-serif;
+  margin: 0;
+}
+
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  font-size: 1.2em;
+}
+
+h2 {
+  margin-bottom: .2em;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.subheading {
+  font-weight: normal;
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+header, section {
+  margin: 1.5em;
+}
+
+section, article {
+  margin-bottom: 5em;
+}
+
+aside {
+  margin-bottom: 2em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: .2em;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul > * {
+  margin-right: .75em;
+}
+
+
+
+#hero h2 {
+  font-size: 2.5em;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2em 2.2em;
+
+  font-size: .8em;
+
+  background: #FD3D48;
+  color: #FFFFFF;
+  border-radius: 40px;
+}
+
+footer {
+  padding: 1.5em;
+  background: #202434;
+  color: #FFFFFF;
+}
+
+footer h2 {
+  margin-bottom: 3em;
+}
+
+footer section {
+  margin: 0;
+  margin-bottom: 3em;
+}
+
+footer a {
+  color: #FFFFFF;
 }

@@ -22,7 +22,11 @@ header {
 }
 
 h2 {
-  margin-bottom: .2em;
+  margin-bottom: .5em;
+}
+
+h3 {
+  margin-top: 0;
 }
 
 p {
@@ -41,7 +45,7 @@ a {
 }
 
 header, section {
-  margin: 1.5em;
+  margin: 1em;
 }
 
 section, article {
@@ -71,7 +75,27 @@ nav ul > * {
   margin-right: .75em;
 }
 
+#hero {
+  margin-right: 0;
+  display: grid;
+  grid-template-columns: .5fr minmax(3em, 1fr) minmax(auto, 20em) 3fr;
+}
 
+#hero .content {
+  padding-top: 8em;
+  padding-bottom: 3em;
+  margin-right: 1.5em;
+
+  grid-column: 2 / span 2;
+  grid-row-start: 1;
+  z-index: 1;
+}
+
+#hero .bg {
+  grid-column: 3 / span 2;
+  grid-row-start: 1;
+  background: #FFF2DD;
+}
 
 #hero h2 {
   font-size: 2.5em;
@@ -91,6 +115,44 @@ nav ul > * {
   background: #FD3D48;
   color: #FFFFFF;
   border-radius: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+article .content {
+  padding: 1em;
+  padding-bottom: 2em;
+  background: #FFE2D9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+article a {
+  margin-right: 1em;
+  align-self: flex-end; 
+}
+
+aside {
+  display: grid;
+  grid-template-columns: minmax(2em, auto) 1fr 1fr;
+}
+
+aside .content {
+  padding-bottom: 1em;
+
+  grid-column: 1 / span 3;
+  grid-row-start: 1;
+  z-index: 1;
+}
+
+aside .bg {
+  grid-column: 2 / span 2;
+  grid-row-start: 1;
+  background: #FFF2DD;
 }
 
 footer {

@@ -26,8 +26,8 @@
       </header>
 
       <section id="hero">
-        <div class="bg"></div>
-        <div class="content">
+        <div class="bg rellax" data-rellax-speed="-1"></div>
+        <div class="content rellax" data-rellax-speed="0.5">
           <h2>Hi, I'm JJ</h2>
           <p>I’m a UX Designer specializing in <strong>business analysis</strong> and <strong>interaction
               design</strong>. With my CS background, I’m also pretty strong at <strong>slingin’ that JS</strong>.</p>
@@ -41,8 +41,9 @@
 
         <article>
           <div class="feature feat-r">
-            <img class="bg" src="images/qltppl.jpg" alt="Section of Quality People's dashboard interface">
-            <div class="content">
+            <img class="bg rellax" data-rellax-speed="0" src="images/qltppl.jpg"
+              alt="Section of Quality People's dashboard interface">
+            <div class="content rellax" data-rellax-speed="0.5">
               <h3>
                 <span class="subheading">Product Management</span><br />
                 Quality People Dashboard
@@ -69,9 +70,9 @@
 
         <article>
           <div class="feature feat-l">
-            <img class="bg" src="images/viz.jpg"
+            <img class="bg rellax" data-rellax-speed="0" src="images/viz.jpg"
               alt="Bubble chart with green and blue bubbles representing research papers">
-            <div class="content">
+            <div class="content rellax" data-rellax-speed="0.5">
               <h3>
                 <span class="subheading">Data Visualization Development</span><br />
                 Multi-year trends in research data
@@ -96,8 +97,9 @@
 
         <div class="col col2">
           <article>
-            <img src="images/2d-rangeslider.jpg" alt="Network graph with a draggable center node">
-            <div class="content">
+            <img class="rellax" data-rellax-speed="0.3" src="images/2d-rangeslider.jpg"
+              alt="Network graph with a draggable center node">
+            <div class="content rellax" data-rellax-speed="0.5">
               <h3>
                 <span class="subheading">Interaction Design</span><br />
                 2D Range Slider
@@ -110,8 +112,9 @@
           </article>
 
           <article>
-            <img src="images/lets-cook.jpg" alt="Paper sketch of screens for the Let's Cook mobile app">
-            <div class="content">
+            <img class="rellax" data-rellax-speed="0.3" src="images/lets-cook.jpg"
+              alt="Paper sketch of screens for the Let's Cook mobile app">
+            <div class="content rellax" data-rellax-speed="0.5">
               <h3>
                 <span class="subheading">UX Research and Design</span><br />
                 Let's Cook!
@@ -131,7 +134,7 @@
           <h2>About me</h2>
         </div>
         <div class="col col2">
-          <aside>
+          <aside class="reveal">
             <div class="bg"></div>
             <div class="content">
               <h3 class="subheading">Education</h3>
@@ -200,5 +203,20 @@
     </footer>
 
   </body>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="rellax.min.js"></script>
+  <script>
+    var slideUp = {
+      distance: '50px',
+      origin: 'bottom',
+      opacity: 0,
+      duration: 1200
+    };
+
+    ScrollReveal().reveal('article', slideUp);
+    ScrollReveal().reveal('.reveal', slideUp);
+
+    var rellax = new Rellax('.rellax');
+  </script>
 
 </html>

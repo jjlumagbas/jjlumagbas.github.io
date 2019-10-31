@@ -14,7 +14,7 @@
 
   <body>
 
-    <main>
+    <main class="width-m">
       <header>
         <h1 class="logo">JJ Lumagbas <span class="subheading">UX Design</span></h1>
         <nav>
@@ -39,8 +39,8 @@
       <section id="work">
         <h2>Recent work</h2>
 
-        <article>
-          <div class="feature feat-r">
+        <article class="reveal">
+          <div class="card feature feat-r">
             <img class="bg rellax" data-rellax-speed="0" src="images/qltppl.jpg"
               alt="Section of Quality People's dashboard interface">
             <div class="content rellax" data-rellax-speed="0.5">
@@ -68,8 +68,8 @@
 
         </article>
 
-        <article>
-          <div class="feature feat-l">
+        <article class="reveal">
+          <div class="card feature feat-l">
             <img class="bg rellax" data-rellax-speed="0" src="images/viz.jpg"
               alt="Bubble chart with green and blue bubbles representing research papers">
             <div class="content rellax" data-rellax-speed="0.5">
@@ -96,7 +96,7 @@
 
 
         <div class="col col2">
-          <article>
+          <article class="card reveal">
             <img class="rellax" data-rellax-speed="0.3" src="images/2d-rangeslider.jpg"
               alt="Network graph with a draggable center node">
             <div class="content rellax" data-rellax-speed="0.5">
@@ -111,7 +111,7 @@
             </div>
           </article>
 
-          <article>
+          <article class="card reveal">
             <img class="rellax" data-rellax-speed="0.3" src="images/lets-cook.jpg"
               alt="Paper sketch of screens for the Let's Cook mobile app">
             <div class="content rellax" data-rellax-speed="0.5">
@@ -138,7 +138,7 @@
             <div class="bg"></div>
             <div class="content">
               <h3 class="subheading">Education</h3>
-              <ul>
+              <ul class="no-bullets">
                 <li><strong>Master of Information Systems</strong><br />
                   University of Melbourne
                 </li>
@@ -180,7 +180,7 @@
         <div class="col col3">
           <section>
             <h3 class="subheading">Contact</h3>
-            <ul>
+            <ul class="no-bullets">
               <li><a href="mailto:jjlumagbas@gmail.com">jjlumagbas@gmail.com</a></li>
               <li><a href="#">+1 956 732 3186</a></li>
             </ul>
@@ -193,7 +193,7 @@
 
           <section>
             <h3 class="subheading">Me elsewhere</h3>
-            <ul>
+            <ul class="no-bullets">
               <li><a href="#">Github</a></li>
               <li><a href="#">Instagram</a></li>
             </ul>
@@ -213,7 +213,6 @@
       duration: 1200
     };
 
-    ScrollReveal().reveal('article', slideUp);
     ScrollReveal().reveal('.reveal', slideUp);
 
     var rellax = new Rellax('.rellax');

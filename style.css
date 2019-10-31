@@ -19,8 +19,14 @@ body {
   margin: 0;
 }
 
-main {
+.width-m {
   max-width: 1024px;
+  margin: auto;
+}
+
+
+.width-l {
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -30,10 +36,20 @@ footer > * {
 }
 
 header {
+  margin: 1em 5vw;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
+}
+
+section {
+  margin: 1em;
+}
+
+section, article {
+  margin-bottom: 5em;
 }
 
 .logo {
@@ -61,33 +77,26 @@ a {
 .subheading {
   font-weight: normal;
   font-size: .8em;
+  letter-spacing: .01em;
   text-transform: uppercase;
 }
 
-header {
-  margin: 1em 2vw;
-}
-
-section {
-  margin: 1em;
-}
-
-section, article {
-  margin-bottom: 5em;
-}
-
-aside {
-  margin-bottom: 2em;
+h2 .subheading, h3 .subheading {
+  font-size: .7em;
 }
 
 ul {
   margin: 0;
-  padding: 0;
+  margin-bottom: 1em;
+}
+
+nav ul, ul.no-bullets {
   list-style: none;
+  padding: 0;
 }
 
 li {
-  margin-bottom: .8em;
+  margin-bottom: .3em;
 }
 
 nav ul {
@@ -95,8 +104,12 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav ul > * {
-  margin-right: .75em;
+nav ul > li {
+  margin-right: 1em;
+}
+
+nav ul > li:last-child {
+  margin-right: 0;
 }
 
 #hero {
@@ -106,8 +119,8 @@ nav ul > * {
 }
 
 #hero .content {
-  padding-top: 8em;
-  padding-bottom: 3em;
+  margin-top: 8em;
+  margin-bottom: 3em;
   margin-right: 1.5em;
 
   grid-column: 2 / span 2;
@@ -120,6 +133,11 @@ nav ul > * {
   background: #FFF2DD;
 }
 
+#hero img {
+  height: 100%;
+  object-fit: cover;
+}
+
 #hero h2 {
   font-size: 2.5em;
 }
@@ -128,6 +146,8 @@ nav ul > * {
   font-size: 1.2em;
   margin-bottom: 2em;
 }
+
+
 
 .btn {
   display: inline-block;
@@ -144,17 +164,22 @@ img {
   width: 100%;
 }
 
-article .content {
+aside img {
+  width: initial;
+  margin-top: -1em;
+}
+
+.card .content {
   padding: 1em;
   padding-bottom: 2em;
-  background: #FFE2D9;
+  background: rgb(255, 226, 217, .6); 
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-article a {
+.card a {
   margin-right: 1em;
   align-self: flex-end; 
 }
@@ -164,12 +189,14 @@ article a {
 }
 
 aside {
+  margin-bottom: 2em;
+
   display: grid;
   grid-template-columns: minmax(2em, auto) 1fr 1fr;
+
 }
 
 aside .content {
-  background: initial;
   padding-bottom: 1em;
 
   grid-column: 1 / span 3;
@@ -202,8 +229,41 @@ footer a {
   color: #FFFFFF;
 }
 
+.case > #hero .content {
+  padding: 1em;
+  background: rgb(255, 226, 217, .6); 
+}
+
+.case {
+  margin-bottom: 5em;
+  display: grid;
+  align-items: baseline;
+  justify-items: center;
+  grid-template-columns: 
+    [full-start sidebar-start] 3fr [sidebar-end main-start] 4fr [main-end full-end];
+}
+
+.case > * {
+  grid-column: full;
+  margin: 1em;
+}
+
+.case p, .case ul {
+  max-width: 45ch;
+}
+
+p.leading {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  max-width: 45ch;
+}
+
+.summary { 
+  font-size: .9em;
+}
 
 @media screen and (min-width: 600px) {
+
   .feature {
     display: grid;
     align-items: center;
@@ -238,16 +298,16 @@ footer a {
   aside .content {
     grid-column: content;
 
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: baseline;
+    grid-gap: 1em;
   }
 
-  aside .content > *:first-child {
-    flex: 1 0 auto;
-    margin-right: 1em;
+  aside .subheading {
     text-align: right;
   }
+
   
   aside .bg {
     grid-column: bg;
@@ -257,8 +317,6 @@ footer a {
   aside .logo {
     margin: 1em;
     grid-column: logo;
-    grid-row: 1;
-    width: initial;
   }
 
   .feat-extra {
@@ -282,12 +340,11 @@ footer a {
 
   .col {
     display: flex;
-    justify-content: center;
-    align-items: baseline; 
+    align-items: flex-start;
   }
 
   .col > * {
-    margin-right: 3%;
+    margin-right: 2%;
   } 
 
   .col2 > * {
@@ -309,11 +366,47 @@ footer a {
   .col3 > section:nth-child(3) {
     text-align: right;
   }
+
+  .case p, .case ul {
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+
+  p.leading {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    max-width: 36ch;
+  }
 }
+
+
 
 @media screen and (min-width: 900px) {
   #about p {
     font-size: 1.2em;
     line-height: 1.6em;
   }
+
+  p.leading {
+    max-width: 50ch;
+  }
+
+  .case > * {
+    grid-column: main;
+    justify-self: start;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .grid-full {
+    grid-column: full;
+    justify-self: center;
+  }
+
+  .sidebar {
+    grid-column: sidebar;
+  }
+
 }

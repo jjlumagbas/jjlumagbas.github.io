@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>JJ Lumagbas - UX Design</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <main>
+      <div class="width-m">
+        <header>
+          <h1 class="logo">JJ Lumagbas <span class="subheading">UX Design</span></h1>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <article class="case width-l">
+        <div id="hero" class="grid-full width-m">
+          <img class="bg" src="../images/sherlock.jpg"
+            alt="Screenshot of the full dashboard interface for Quality People">
+          <div class="content">
+            <h2>Quality People</h2>
+            <p><span class="subheading">Case study</span><br /> User flow analysis and design for a new dashboard
+              feature</p>
+          </div>
+        </div>
+
+        <div class="grid-full text-center">
+          <p class="leading width-m">
+            Quality People uses clever marketing and big-data analytics to help schools find teachers who best fit open
+            positions. It allows schools to launch targeted marketing to job-seekers, and then usher applicants through
+            their hiring pipeline.
+          </p>
+        </div>
+
+        <aside class="summary sidebar reveal">
+          <div class="bg"></div>
+          <div class="content">
+            <div></div>
+            <img src="../images/qltppl-logo.png" alt="Quality People logo">
+            <h3 class="subheading">Client</h3>
+            <p>
+              Quality People, a platform that helps schools recruit teachers using big-data analytics and targeted
+              marketing
+            </p>
+
+            <h3 class="subheading">Challenge</h3>
+            <p>
+              Major feature update that required changes to multiple front-ends, as well as the underlying data model
+              and
+              backend API
+            </p>
+
+            <h3 class="subheading">My role</h3>
+            <p>
+              Product Management: Document existing user flows and design updated user flows, UI sketches, and
+              mockups;
+              Lead
+              implementation, manage remote developers, assemble and maintain sprint backlogs
+            </p>
+
+            <h3 class="subheading">Extra challenge</h3>
+            <p>
+              Distributed team: The company is based in Austin, I worked remotely from South Texas, and I managed devs
+              who
+              operated out of the Philippines.
+            </p>
+
+            <h3 class="subheading">Extra extra challenge</h3>
+            <p>
+              The original devs had moved on from the company! So initial work was needed to document existing user
+              flows,
+              to effectively onboard new set of developers
+            </p>
+
+            <h3 class="subheading">Outcome</h3>
+            <p>
+              We successfully implemented and deployed the feature update, which opened up the platform to a
+              significantly
+              broader set of customers (schools)
+            </p>
+          </div>
+
+        </aside>
+
+        <div>
+          <p class="width-m">
+            I helped design and launch a feature to allow schools to manage
+            separate hiring pipelines for different job openings (then, the platform allowed for only a single
+            pipeline).
+            This required changes to multiple frontends, as well as the underlying data model and backend API.
+          </p>
+          <h2>
+            <span class="subheading">
+              Documenting existing user flows
+            </span><br />
+            But first...
+          </h2>
+          <p>
+            Before we could start designing the new feature, we first needed a clear picture of existing user flows.
+          </p>
+          <p>
+            Since the original devs had already moved on from the company, and we were onboarding new devs, plus the
+            team
+            was distributed across two timezones, written (or in this case, drawn) documentation that could serve as
+            reference for the team was critical.
+          </p>
+          <p>
+            To get a solid picture of the existing user flows, I:
+          </p>
+          <ul>
+            <li>conducted multiple interviews with the VP Product (the remaining member of the original team),</li>
+            <li>sent questions to the original devs (who at that point were working at new jobs),</li>
+            <li>did some code-diving (my CS background proved useful here), and</li>
+            <li>stepped through the platform as a user to see which buttons led where.</li>
+          </ul>
+          <p>
+            The result of this process is the below diagram. Notice that it's a) rough, since this was intended for the
+            development team eyes only, and needed to be foremost functional, and not necessarily pretty, and b)
+            jam-packed
+            with as much information as I could fit in, to serve as a single-page reference for most major steps in the
+            various user flows.
+          </p>
+        </div>
+
+        <img class="grid-full width-m reveal" src="../images/user-flow.jpg"
+          alt="Handwritten diagram with boxes connected by arrows">
+        <p>The diagram features:</p>
+
+        <div class="grid-full width-m">
+          <section class="col col2 reveal">
+            <img src="../images/user-flow-1.jpg" alt="Handwritten diagram with boxes connected by arrows">
+            <div>
+              <h3 class="subheading">User types and corresponding front-ends</h3>
+              <ul>
+                <li>School hiring managers were the primary users, and saw a Trello-like dashboard of job candidates.
+                </li>
+                <li>Interested job-seekers saw a form to enter their details.</li>
+                <li>An internal Quality People team member had a dashboard to screen application form submissions before
+                  sending them through to the hiring manager dashboard.</li>
+              </ul>
+            </div>
+          </section>
+          <section class="col col2 reveal">
+            <img src="../images/user-flow-2.jpg" alt="Handwritten diagram with boxes connected by arrows">
+            <div>
+              <h3 class="subheading">System architecture details</h3>
+              <p>
+                How each of the front-ends interacted with a single backend that handled all the business logic, and
+                interacted directly with the DB
+              </p>
+            </div>
+          </section>
+          <section class="col col2 reveal">
+            <img src="../images/user-flow-3.jpg" alt="Handwritten diagram with boxes connected by arrows">
+            <div>
+              <h3 class="subheading">Steps in the life of a customer (school) entity</h3>
+              <p>
+                From initialization of the hiring pipeline, to building application forms, to finally accepting and
+                viewing
+                submissions from interested applicants.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <h2>
+            <span class="subheading">New user flows</span><br />
+            Setting the target
+          </h2>
+          <p>
+            From this point, together with VP Product, I then mapped out modified user flows with the new
+            multiple-pipelines
+            feature implemented. This diagram again is a sort of hybrid, combining information about:
+          </p>
+          <ul>
+            <li>the platform components that different user types interact with</li>
+            <li>data entities that get created at various stages.</li>
+            <li>Additionally, it zooms out a bit to capture marketing efforts (on the right-hand side), as well as
+              potential
+              organizational structures of customers (schools).</li>
+          </ul>
+        </div>
+        <img class="grid-full width-m reveal" src="../images/qppl-data.jpg"
+          alt="Hand-drawn diagram with icons and arrows representing user flows through the platform">
+
+
+        <div>
+          <h2>
+            <span class="subheading">UI Changes</span><br />
+            (Not) reinventing the wheel
+          </h2>
+          <p>
+            With a good understanding of the existing (and target) user flows, design of the actual screens to support
+            the
+            change turned out to be fairly straightforward. I wrote user stories, and drew up sketches and mockups to
+            serve
+            as specs for the devs.
+          </p>
+        </div>
+
+        <aside class="summary reveal">
+          <div class="bg"></div>
+          <div class="content">
+            <h3 class="subheading">Problem</h3>
+            <p>What's the simplest way to allow a school hiring manager to view a different hiring pipeline, given he
+              already had a Trello-like dashboard to show a single hiring pipeline? </p>
+
+            <h3 class="subheading">Solution</h3>
+            <p> A project-switcher dropdown. </p>
+          </div>
+        </aside>
+
+
+        <img class="grid-full width-m reveal" src="../images/project-switcher.jpg"
+          alt="Side-by-side screenshot of the Trello project switcher and the Gmail account switcher">
+        <p>
+
+          Lots of other software platforms do this: for instance, Trello for multiple boards (left), and Gmail for
+          multiple accounts (right). It's a common enough pattern, and seemed intuitive enough for users to adopt.
+        </p>
+
+        <aside class="summary sidebar reveal">
+          <div class="bg"></div>
+          <div class="content">
+            <h3 class="subheading">Reflection sidebar</h3>
+            <p>
+              In a previous paragraph I said this UI change <em>seemed intuitive enough for users to adopt</em>. How did
+              I
+              know this? Two possible answers:
+            </p>
+            <span></span>
+            <p>
+              <span class="subheading">I Don't!</span>
+              I'm not the user, so this is definitely an assumption I'm making. Ideally, we would have done usability
+              tests
+              on mockups with a few actual users to validate assumptions before doing any actual implementation. In this
+              case, the team bias was more towards shipping a likely good enough solution, and so we skipped usability
+              testing.
+            </p>
+            <span></span>
+            <p>
+              <span class="subheading">Heuristics</span>
+              This decision, however, was not at all merely a shot in the dark: <a
+                href="https://lawsofux.com/jakobs-law">Jakob Nielsen says users spend most of the time on other
+                sites</a>, and so using a common UI pattern had a good chance of succeeding at communicating behavior.
+            </p>
+          </div>
+        </aside>
+        <div>
+          <p>
+            As a bonus, the pattern is flexible enough to keep the door open for future feature updates, for
+            instance:
+          </p>
+          <ul>
+            <li>To restrict view rights for various users, just filter the list of pipelines that are visible for
+              that
+              user.
+            </li>
+            <li>Will the user want to view multiple pipelines at once? Add checkboxes to each pipeline in the
+              dropdown,
+              and
+              allow users to select multiple pipelines.</li>
+          </ul>
+        </div>
+
+
+        <div class="grid-full width-m">
+          <section class="col col2 reveal">
+            <img src="../images/qltppl-sketch.jpg"
+              alt="Hand-drawn sketch of a modal card of an job applicant showing buttons and dropdowns to interact with the card">
+            <div>
+              <h3 class="subheading">UI Sketch</h3>
+              <p>
+                Here's a sketch I made of the school hiring manager dashboard with the dropdown labelled
+                &ldquo;Projects&rdquo;
+                (that's
+                the term for &ldquo;hiring pipeline&rdquo; that school hiring managers used most often).
+              </p>
+            </div>
+          </section>
+
+          <section class="col col2 reveal">
+            <img src="../images/qltppl.jpg" alt="Section of Quality People's dashboard interface">
+            <div>
+              <h3 class="subheading">UI Mockup</h3>
+              <p>
+                And on the internal Quality People dashboard, here's a portion of the mockup I made with the pipeline
+                dropdown on the upper-right.
+              </p>
+            </div>
+          </section>
+
+        </div>
+
+
+        <div>
+          <h2>
+            <span class="subheading">Outcomes</span><br />
+            Vision to actionable specs
+          </h2>
+          <p>
+            I successfully bridged the gap between VP Product, who carried the product vision, and translate that
+            vision
+            into feature specs for the development team.
+          </p>
+          <p>
+            We did, however, experience some development delays. Note for next time: ensure devs are actively involved
+            in
+            creating sprint targets, and have them own the backlog!
+          </p>
+          <p>
+            In the end, we were able to implement and deploy the multiple-pipeline feature, opening up the platform to
+            a
+            significantly broader set of school customers.
+          </p>
+
+          <h2>
+            <span class="subheading">Lessons learned</span><br />
+            A diagram = 1K words
+          </h2>
+          <p>
+            For me, this project highlighted the ability of visual documentation to be an efficient repository of
+            information: they're quick to produce, you can pack in a lot of information, and with enough shared
+            understanding they are evocative for the reader without being verbose.
+          </p>
+        </div>
+      </article>
+    </main>
+
+
+    <footer id="contact">
+      <div>
+        <h2 class="logo">JJ Lumagbas <span class="subheading">UX Design</span></h2>
+
+        <div class="col col3">
+          <section>
+            <h3 class="subheading">Contact</h3>
+            <ul class="no-bullets">
+              <li><a href="mailto:jjlumagbas@gmail.com">jjlumagbas@gmail.com</a></li>
+              <li><a href="#">+1 956 732 3186</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="subheading">Here's that resumé button again</h3>
+            <a href="#" class="btn">View my resumé</a>
+          </section>
+
+          <section>
+            <h3 class="subheading">Me elsewhere</h3>
+            <ul class="no-bullets">
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script>
+    var slideUp = {
+      distance: '50px',
+      origin: 'bottom',
+      opacity: 0,
+      duration: 1200
+    };
+
+    ScrollReveal().reveal('.reveal', slideUp);
+
+  </script>
+
+</html>
